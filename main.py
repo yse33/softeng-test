@@ -1,6 +1,8 @@
 def odd_numbers(n):
     return [i for i in range(1, n + 1) if i % 2 != 0]
 
+def even_numbers(n):
+    return [i for i in range(1, n + 1) if i % 2 == 0]
 
 def print_menu():
     print("1. Odd numbers")
@@ -15,6 +17,8 @@ def main():
     maxNum = int(input("Enter max number: "))
     if function == 1:
         odd_numbers(maxNum)
+    elif function == 2:
+        even_numbers(maxNum)
     else:
         print("Invalid choice")
 
